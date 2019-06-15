@@ -1,0 +1,438 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+/* 
+font-family: 'Roboto', sans-serif; 
+*/
+
+/* SELEKTORY HTML */
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+nav{
+	height: 70px;
+	position: fixed;
+	width: 100%; /* po zafixowaniu, przywracamy 100% szerokości */
+	z-index: 9999;
+}
+
+nav ol{
+	display: flex; /* zawartość OL wyświetli się obok siebie elastycznie, automatycznie */
+	line-height: 70px;
+	text-align: center;
+}
+nav ol li{
+	flex: 1 1 200px;
+	}
+nav ol li a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 3px;
+	display: block; /* a jako element liniowy musimy zmienić na wyświetlanie blokowe, wtedy przyjmie wielkość dostępnego obszaru */
+}
+nav ol li a:hover{
+	background-color: white;
+	color: #444444;
+	font-weight: 500;
+	font-size: 16px;
+	}
+/* koniec menu */
+
+
+
+footer{
+	background-color: #011c26;
+	color: white;
+	padding: 50px;
+	}
+
+footer .kontener{
+	display: flex;
+	width: 100%;
+}
+
+.kol-lewa{
+	justify-content: flex-start;
+	flex-direction: row;
+	width: 50%;	
+	padding-left: 20px;
+	}
+
+.social a{
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	transition: all 0.4s;
+	display: inline-block;
+	margin-right: 20px;
+	}
+
+.social a:hover{
+	color: #358c8c;
+}
+
+.kol-prawa{
+	justify-content: flex-end;
+	flex-direction: row;
+	width: 50%;	
+	text-align: right;
+	padding-right: 20px;
+	}
+
+#copy {
+	font-size: 12px;
+	font-weight: 500;
+	padding-top: 14px;
+}
+
+section{
+	height: 100vh;
+	box-sizing: border-box; /* powoduje, ze padding nie zwieksza szerokosci ani wysokosci elementow */
+}
+/******************/
+
+/* SELEKTORY ID */
+#top{
+	background: url(../img/diego-jimenez-258119-unsplash.jpg) no-repeat center center fixed; 
+ 	-webkit-background-size: cover; 
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#top .kontener{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;	
+}
+
+#logo{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	}
+#znaczek{
+	content:url(../img/logo_biale_300x300.png);
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	padding-bottom: 30px;	
+}
+#top h1{
+	text-decoration: none;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	letter-spacing: 5px
+}
+#top h2{
+	text-decoration: none;
+	font-size: 25px;
+	text-transform: lowercase;
+	font-weight: 100;	
+	letter-spacing: 5px 
+}
+/***************/
+#tresc{
+	background-color: #358c8c;
+	color: white;
+	height: auto;
+	padding-top: 120px;
+}
+
+#tresc .kontener{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 100px;
+	justify-content: center;
+}
+
+.kolumna{
+	flex: 0 1 400px;
+	padding: 20px 20px;
+	/* powoduje, ze padding nie zwieksza wymiaru elemenetu*/
+	box-sizing: border-box;
+}
+
+.kolumna h1{
+	font-size: 40px;
+	padding-bottom: 25px;
+	font-weight: 300;
+}
+
+.kolumna p{
+	line-height: 1.5em;
+	font-size: 16px;
+	font-weight: 300;
+	padding-bottom: 30px;
+}
+/***************/
+
+#statystyki{
+	padding-top: 120px;
+	height: auto
+}
+
+#statystyki .kontener{
+	padding-bottom: 100px;
+	color: #444444;
+	text-align: center;
+	}
+
+.kol-stat{
+	display: inline-block;
+	padding: 20px 20px;
+	/* powoduje, ze padding nie zwieksza wymiaru elemenetu*/
+	text-align: center;
+	box-sizing: border-box;
+	min-width: 397px;
+}
+
+.kol-stat h1{
+	font-size: 100px;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+
+.kol-stat h4{
+	font-size: 16px;
+	font-weight: 300;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#galeria{
+	background-color: lightgray;
+	height: auto;
+	padding-bottom: 130px;
+	padding-top: 120px;	
+}
+
+#galeria .kontener{
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+.foty{
+	flex: 0 1 400px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	}
+
+.foty.foty1:after{
+	content: 'norwegia';
+	display: block;
+	background: #358c8c;
+	height: 400px;
+	opacity: 0;
+	transition: all 0.6s;
+	line-height: 400px;
+	}
+
+.foty.foty1:hover:after{
+	opacity: 0.85;
+	}
+
+.foty.foty2:after{
+	content: 'australia';
+	display: block;
+	background: #358c8c;
+	height: 400px;
+	opacity: 0;
+	transition: all 0.6s;
+	line-height: 400px;
+	}
+
+.foty.foty2:hover:after{
+	opacity: 0.85;
+	}
+
+.foty.foty3:after{
+	content: 'nowa zelandia';
+	display: block;
+	background: #358c8c;
+	height: 400px;
+	opacity: 0;
+	transition: all 0.6s;
+	line-height: 400px;
+	}
+
+.foty.foty3:hover:after{
+	opacity: 0.85;
+	}
+
+.foty.foty4:after{
+	content: 'kanada';
+	display: block;
+	background: #358c8c;
+	height: 400px;
+	opacity: 0;
+	transition: all 0.6s;
+	line-height: 400px;
+	}
+
+.foty.foty4:hover:after{
+	opacity: 0.85;
+	}
+
+.foty.foty5:after{
+	content: 'madagaskar';
+	display: block;
+	background: #358c8c;
+	height: 400px;
+	opacity: 0;
+	transition: all 0.6s;
+	line-height: 400px;
+	}
+
+.foty.foty5:hover:after{
+	opacity: 0.85;
+	}
+
+.foty.foty6:after{
+	content: 'amazonia';
+	display: block;
+	background: #358c8c;
+	height: 400px;
+	opacity: 0;
+	transition: all 0.6s;
+	line-height: 400px;
+	}
+
+.foty.foty6:hover:after{
+	opacity: 0.85;
+	}
+
+#z1{
+	background-image: url(../img/banter-snaps-387953-unsplash.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+
+#z2{
+	background-image: url(../img/bence-balla-schottner-1570172-unsplash.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+#z3{
+	background-image: url(../img/luca-bravo-134059-unsplash.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+#z4{
+	background-image: url(../img/luca-bravo-134776-unsplash.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+#z5{
+	background-image: url(../img/matze-scheel-248959-unsplash.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+#z6{
+	background-image: url(../img/anne-sophie-benoit-484366-unsplash.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+#agnieszka{
+	height: auto;
+	padding-top: 80px;
+}
+
+#agnieszka .kontener{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 100px;
+	color: #444444;
+}
+
+.kol-agnieszka{
+	flex: 0 1 400px;
+	padding: 40px 20px 20px 20px;
+	/* powoduje, ze padding nie zwieksza wymiaru elemenetu*/
+	box-sizing: border-box;
+}
+
+.kol-agnieszka h1{
+	font-size: 40px;
+	padding-bottom: 25px;
+	font-weight: 300;
+}
+
+.kol-agnieszka p{
+	line-height: 1.5em;
+	font-size: 16px;
+	font-weight: 300;
+	padding-bottom: 30px;
+	min-height: 100px;
+}
+
+.button {
+	background-color: #358c8c;
+	transition-duration: 0.4s;
+	width: 130px;
+}
+
+.button a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	letter-spacing: 1px;
+	}
+
+.button:hover {
+  background-color: #011c26; 
+  color: white;
+}
+
+.foty-agnieszka{
+	height: 80px;
+	width: auto;
+	padding-bottom: 40px;
+	}
+
+#f1{
+	content:url(../img/namiot.png);
+	}
+
+#f2{
+	content: url(../img/ognisko.png)
+}
+
+#f3{
+	content: url(../img/plecak.png)
+}
+
+/******************/
+
+/* SELEKTORY CLASS */
+.kontener{
+	max-width: 1200px;
+	margin: auto;	
+	justify-content: center;
+}
+/******************/

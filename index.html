@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="utf-8">
+	<title>sobala_agnieszka_projekt</title>
+	
+	<!-- dołączanie zewnętrznych plików -->
+	<!-- dołączanie RESET.CSS -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<!-- SKRYPT PŁYNNEGO PRZEWIJANIA -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+		if (this.hash !== "") {
+		  event.preventDefault();
+		  var hash = this.hash;
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+			window.location.hash = hash;
+		  });
+		} 
+	  });
+	});
+	</script>
+	
+	<script>
+		$(window).scroll(function () {
+			if ($(window).scrollTop() >= 300) {
+				$('nav').css('background','#373737','transition','0.4s');
+				$('nav').css('transition','0.8s');
+			} else {
+				$('nav').css('background','transparent');
+}
+});
+	</script>
+	
+</head>
+
+<body>
+	
+	<nav>
+		<div class="kontener">
+			<ol>
+				
+				<!-- # odsyła do sekcji -->
+				<li><a href="#top">top</a></li>
+				<li><a href="#tresc">treść</a></li>
+				<li><a href="#statystyki">statystyki</a></li>
+				<li><a href="#galeria">galeria</a></li>
+				<li><a href="#agnieszka">agnieszka</a></li>		
+				
+			</ol>
+		</div>
+	</nav>
+	
+	<section id="top">
+		<div class="kontener">
+			
+			<div id="logo">
+				<div id="znaczek"></div>
+				<h1>drogie wycieczki</h1>
+				<h2>Otwieramy przed Tobą Świat!</h2>
+			</div>
+			
+		</div>
+	</section>
+	
+	<section id="tresc">
+		<div class="kontener">
+			<!-- class może być dla wielu elementów, a id dla jednego -->
+			
+			<div class="kolumna">
+				<h1>Nagłówek 1</h1>
+				<p>
+					Quisque cursus, lacus a ante ipsum dolor accumsan lectus nec tristique purus. Phasellus placerat id, ante. Phasellus fermentum facilisis. Maecenas elit porttitor vel, dignissim massa. Vivamus lacus. Nunc ipsum vel risus. Phasellus fermentum sed, urna. Proin volutpat ultricies dolor sit amet libero posuere cubilia Curae, Nulla in faucibus massa imperdiet felis, consequat ligula porttitor lectus ut lorem. Nunc elementum. Mauris nunc ut nonummy nisl pellentesque auctor augue.
+				</p>
+			</div>
+			
+			<div class="kolumna">
+				<h1>Nagłówek 2</h1>
+				<p>
+					In hac habitasse platea dictumst. Duis gravida, nisl erat at nulla sed lorem velit vitae dui ut lacus. Maecenas scelerisque, dui tincidunt rutrum vel, dignissim massa. Pellentesque suscipit luctus. Maecenas at ante. Proin dui lectus, eu tincidunt mi, quis wisi. Phasellus consequat. Cum sociis natoque penatibus et interdum arcu dolor, luctus diam. Donec ligula condimentum faucibus et, elit. Aenean mollis tincidunt, orci et magnis dis parturient montes, nascetur ridiculus mus. Fusce imperdiet wisi. Phasellus.
+				</p>
+			</div>
+			
+			<div class="kolumna">
+				<h1>Nagłówek 3</h1>
+				<p>
+					In venenatis nulla. Aenean dui non purus. Fusce suscipit rutrum. Nunc vitae magna justo vel eros lacus, congue nibh ut nulla vitae turpis risus dolor eu sem vestibulum quis, lacinia quam eget sapien sapien, congue nibh ac imperdiet sed, neque. Sed pharetra. Suspendisse est diam, tincidunt nonummy, tellus vulputate quam. Dnec suscipit dui tellus, quis molestie egestas, justo euismod quis, convallis posuere. Quisque in consequat lacus et turpis. Lorem ipsum erat, molestie quis, pellentesque tincidunt, diam elementum quis, luctus ut, gravida ornare. 
+				</p>
+			</div>
+			
+			<div class="kolumna">
+				<h1>Nagłówek 4</h1>
+				<p>
+					Nulla facilisis congue. Aliquam eleifend non, tristique tellus. Donec urna felis, dignissim a, lacinia lacus. Pellentesque eget sem. Aenean sit amet quam auctor vulputate mi, nec tristique senectus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur feugiat fermentum gravida feugiat facilisis nibh, sollicitudin mauris nec ultrices posuere risus. Sed eu odio sagittis lacus. Nullam in risus. Ut eget nulla. Morbi dignissim, sapien sapien, sagittis ipsum sit amet ipsum lorem id elit est, viverra sed, nunc.
+				</p>
+			</div>
+			
+			<div class="kolumna">
+				<h1>Nagłówek 5</h1>
+				<p>
+					Curabitur ultrices nec, posuere nisl pellentesque dapibus et, congue urna. Vestibulum fermentum. Vivamus semper et, fermentum sapien tristique velit, rhoncus laoreet iaculis suscipit. Suspendisse quis mauris orci, sollicitudin lorem, tempus enim. Praesent tortor pede turpis sagittis porta, est turpis luctus aliquam, libero. Maecenas feugiat dui, eget velit vitae nibh volutpat elit, interdum consectetuer tortor. Praesent quis.
+				</p>
+			</div>
+			
+			<div class="kolumna">
+				<h1>Nagłówek 6</h1>
+				<p>
+					Maecenas at sollicitudin eu, posuere cubilia Curae, Sed faucibus, nulla eu sem semper leo. Ut id erat sem condimentum magna blandit egestas ac, vehicula libero nec dui. Sed sollicitudin eu, purus. Nulla eu condimentum lorem ligula, et cursus ante. Morbi felis mollis eu, egestas ipsum primis in sem. Pellentesque aliquam risus pede, luctus leo ut tellus tortor, dictum aliquet id, vulputate a, laoreet ante ipsum ac nunc. Etiam aliquet, dui.
+				</p>
+			</div>
+			
+		</div>
+	</section>
+	
+	<section id="statystyki">
+		<div class="kontener">
+			
+			<div class="kol-stat">
+				<h1>1749</h1>
+				<h4>Zadowolonych klientów</h4>
+			</div>
+			
+			<div class="kol-stat">
+				<h1>99%</h1>
+				<h4>Skuteczności</h4>
+			</div>
+		
+			<div class="kol-stat">
+				<h1>2h</h1>
+				<h4>Średni czas usługi</h4>
+			</div>
+				
+		</div>
+	</section>
+	
+	<section id="galeria">
+		<div class="kontener">
+			
+			<div class="foty foty1" id="z1"></div>
+			<div class="foty foty2" id="z2"></div>
+			<div class="foty foty3" id="z3"></div>
+			<div class="foty foty4" id="z4"></div>
+			<div class="foty foty5" id="z5"></div>
+			<div class="foty foty6" id="z6"></div>
+			
+		</div>
+	</section>
+	
+	<section id="agnieszka">
+		<div class="kontener">
+		
+			<div class="kol-agnieszka">
+				<div class="foty-agnieszka" id="f1"></div>
+				<h1>Nagłówek 1</h1>
+				<p>Quisque cursus, lacus a ante ipsum dolor accumsan lectus nec tristique purus. Phasellus placerat id, ante. Phasellus fermentum facilisis. Maecenas elit porttitor vel, dignissim massa.</p>
+				<div class="button"><a href="#">Czytaj dalej</a></div>
+			</div>
+			<div class="kol-agnieszka">
+				<div class="foty-agnieszka" id="f2"></div>
+				<h1>Nagłówek 2</h1>
+				<p>In venenatis nulla. Aenean dui non purus. Fusce suscipit rutrum. Nunc vitae magna justo vel eros lacus, congue nibh ut nulla vitae turpis risus dolor eu sem vestibulum quis.</p>
+				<div class="button"><a href="#">Czytaj dalej</a></div>
+			</div>
+			<div class="kol-agnieszka">
+				<div class="foty-agnieszka" id="f3"></div>
+				<h1>Nagłówek 3</h1>
+				<p>Curabitur ultrices nec, posuere nisl pellentesque dapibus et, congue urna. Vestibulum fermentum. Vivamus semper et, fermentum sapien tristique velit, rhoncus laoreet iaculis suscipit.</p>
+				<div class="button"><a href="#">Czytaj dalej</a></div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<footer>
+		<div class="kontener">
+			
+			<div class="kol-lewa">
+					<div class="social">
+						<a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/?lang=pl"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					</div>
+			</div>
+			<div class="kol-prawa">
+					<div id="copy">Copyright &copy; 2019. Sobala Agnieszka - Projekt WIT.</div>
+			</div>
+		</div>
+		
+	</footer>
+	
+</body>
+</html>
